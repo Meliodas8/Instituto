@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mapa de imagenes con enlaces</title>
+  </head>
+  <body>
+    <img src="workplace.jpg" alt="Workplace" usemap="#workmap" />
+
+    <map name="workmap">
+      <area
+        shape="rect"
+        coords="34,44,270,350"
+        alt="Computer"
+        href="computer.htm"
+      />
+      <area
+        shape="rect"
+        coords="290,172,333,250"
+        alt="Phone"
+        href="phone.htm"
+      />
+      <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm" />
+    </map>
+    <img src="imagenes\mariposa.jpg" usemap="#image-map" />
+
+    <map name="image-map">
+      <area
+        target=""
+        alt="mariposa"
+        title="mariposa"
+        href="https://es.wikipedia.org/wiki/Lepidoptera"
+        coords="270,528,194,462,233,292,255,201,350,274,366,304,399,339,402,371,422,397,360,496"
+        shape="poly"
+      />
+    </map>
+  </body>
+</html>
