@@ -1,0 +1,101 @@
+.mi_container {
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+}
+.navegacion {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+    background-color: rgba(0, 0, 0, 0);
+}
+.navegacion2 {
+    background: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100px;
+    align-items: center;
+    --padding-container: 0;
+}
+.logo {
+    flex: 1 1 auto;
+    max-width: 90px;
+    min-width: 60px;
+    height: auto;
+}
+.nav_menu {
+    flex: 2 1 70%;
+    display:  flex;
+    justify-content: space-evenly;
+}
+.nav_menu > a {
+    color: aquamarine;
+    text-decoration: none;
+}
+.redes {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.redes > a > img {
+    width: 32px;
+    min-width: 28%;
+}
+.title {
+    font-size: 3rem;
+    padding: 25px 0;
+    color: darkblue;
+}
+.titulo {
+    display: flex;
+    flex-direction: column;
+    height: 75%;
+    justify-content: center;
+    text-align: center;
+    max-width: 800px;
+    color: white;
+}
+.mi_header {
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+}
+.mi_header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      180deg, 
+     rgba(0, 0, 0, 0.5) 25%,
+     rgba(0, 0, 0, 0.75) 100%),
+    url("../imagenes/textura-tablas-madera-clara-encuentra-horizontalmente-textura-madera-tablas-fresno-haya_153325-456.avif");
+    background-size: cover;
+    clip-path: polygon(100% 0, 100% 80%, 50% 150%, 0 80%, 0 0);
+    z-index: -1;
+}
+.parrafo {
+    margin-bottom: 25px;
+    font-size:1.25rem;
+    line-height: 2rem;
+    color: aquamarine;
+}
+.cta {
+    text-decoration: none;
+    color: aqua;
+}
+.main_container {
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+}

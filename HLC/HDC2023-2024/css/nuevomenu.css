@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-container{
+    background-color: aquamarine;
+    padding: 5px;
+    height: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.nav-logo{
+    background-color: blue;
+    max-height: 100px;
+    width: 15%;
+}
+.nav-menu{
+    background-color: blueviolet;
+    width: 70%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.nav-social{
+    background-color: brown;
+    width: 15%;
+}

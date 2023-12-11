@@ -1,0 +1,83 @@
+/*Quitamos el padding y el margin por defecto de los estilos del navegador*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.intro {
+  height: 100vh; /*Usamos toda la altura de la pantalla sobre la que visualizamos*/
+  width: 100%; /*Usamos el 100% de la anchura*/
+  
+  /*Usamos un gradiente linear para establecer en este caso una transparencia con color sobre la imagen
+  Conseguimos un efecto similar al de unas gafas de sol para nosotros*/
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.25)
+    ),
+    url("../img/fondo1.jpg");
+
+  background-size: cover;
+  /*Hacemos lo posible para centrar la imagen*/
+  background-position: center;
+  /*Hacemos la imagen fija, al hacer scroll sobre la página, podemos conseguir un efecto bonito*/
+  background-attachment: fixed;
+  /*Evitamos que se repita el fondo*/
+  background-repeat: no-repeat;
+}
+
+/*Usamos flexbox para centrar el texto al centro horizontal y verticalmente*/
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.texto-intro{
+    text-align: center;
+}
+
+.contenedor-tarjetas{
+    margin: 24px;
+    padding: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.tarjeta{
+    width: 22%;
+    margin: 8px;
+    padding: 4px;
+    background-color: lightgray;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 4px 4px 10px 4px rgba(0,0,0,0.75);
+    text-align: center;
+    
+}
+
+.tarjeta img{
+    width: 100%;
+    height: auto;
+}
+
+article> h3{
+    text-transform: uppercase;
+    padding: 8px 0 8px 0px;
+}
+p{
+    text-align: justify;
+    padding: 8px 0 8px 0px;
+}
+.tarjeta > a{
+    text-decoration: none;
+    color:black;
+    background-color: white;
+    padding: 8px 12px 8px 12px;
+    margin: 4px;
+    display: inline-block;
+}
+.tarjeta > a:hover{
+    text-decoration:underline;
+    color:white;
+    background-color: black;
+}

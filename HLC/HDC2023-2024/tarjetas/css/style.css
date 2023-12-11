@@ -1,0 +1,71 @@
+:root {
+    --padding-container: 100px 0; /*arriba y abajo de 100px y 0px a los lados*/
+    --color-title: #032564;
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 16px;
+  }
+  /* Es el contenedor de la página*/
+  .mi__container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto; /*Centramos verticalmente margin auto hacia los lados*/
+    overflow: hidden; /*Hacemos que si algo ss sale del contenedor se esconda */
+    padding: var(--padding-container);
+  }
+  .tarjetas{
+    text-align: center;
+  }
+  .tarjetas_h1{
+    font-size: 3rem;
+    padding: 2rem 0;
+    color: #032564;
+  }
+  .grid__container{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 250px));
+    gap: 1rem;
+    justify-content: center;
+  }
+  .mi__tarjeta{
+    display: grid;
+    gap: 1em;
+    justify-items: center;
+    width: 250px;
+    overflow: hidden;
+    padding: 0.5rem 0;
+    border-radius: 0.25rem;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .tarjeta__titulo{
+    color: #032564;
+    font-size: 1.5rem;
+  }
+  .tarjeta__img{
+    width: 90%;
+  }
+  .tarjeta__img:hover{
+    transition: 1s ease-in;
+    filter: grayscale(80%);
+  }
+  .boton__tarjeta{
+    display: inline-block;
+    background-color: #2091f9;
+    justify-self: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.75rem 2rem;
+    border-radius: 2rem;
+  }
+  .boton__tarjeta:hover{
+    background-color: #e6dfdf;
+    color: #2091f9;
+    transition: 0.5s ease-in-out;
+  }

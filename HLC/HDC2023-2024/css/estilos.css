@@ -1,0 +1,44 @@
+.container {
+  background-color: gold;
+  padding: 10px;
+  display: flex;
+}
+.item-container {
+  background-color: darkslategray;
+  height: 100px;
+  width: 250px;
+  margin: 10px;
+  font-size: 32px;
+  color: white;
+  text-align: center;
+}
+.nav-container {
+  background-color: black;
+  padding: 10px;
+  height: 100px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-logo {
+  background-color: green;
+  max-height: 100px;
+  width: 15%;
+}
+.nav-logo > a > img {
+  width: auto;
+  max-height: 100px;
+  border: 2px solid orange;
+}
+.nav-menu {
+  background-color: yellow;
+  width: 70%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.nav-social {
+  background-color: red;
+  width: 15%;
+}
